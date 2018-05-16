@@ -1,0 +1,31 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/<db>?useSSL=false
+    username: <username>
+    password: <password>
+  jpa:
+    properties:
+      hibernate: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+      format_sql: false
+
+flyway:
+  enable: true
+  schemas: iot_test
+  encoding: 'UTF-8'
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+
+app:
+  jwtSecret: itsASecretKeyForJWT
+  jwtExpirationInMs: 604800000
