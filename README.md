@@ -39,3 +39,4 @@ Now you have got a new token :metal: For access the other REST methods you shoul
 ![access](https://raw.githubusercontent.com/nailcankucuk/spring-security-jwt-api/master/src/main/resources/images/access.png)
 
 ![not_access](https://raw.githubusercontent.com/nailcankucuk/spring-security-jwt-api/master/src/main/resources/images/not_access.png)
+
